@@ -58,7 +58,7 @@ type Props = {
 
 const majorVersion = parseInt(Platform.Version, 10);
 const isIos = Platform.OS === 'ios';
-const useHorizontalTabs = majorVersion >= 11 && isIos;
+const useHorizontalTabs = false;//majorVersion >= 11 && isIos;
 
 class TabBarBottom extends PureComponent<DefaultProps, Props, void> {
   // See https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/UIKitUICatalog/UITabBar.html
